@@ -1,0 +1,44 @@
+[
+  {
+    "bookid": 1,
+    "name": "Introduction to Angular",
+    "category": "Technology",
+    "author": "John Doe",
+    "image": "angular.jpg"
+  },
+  {
+    "bookid": 2,
+    "name": "Harry Potter and the Half Blood Prince",
+    "category": "Novel",
+    "author": "J.K. Rowling",
+    "image": "fifth.jpg"
+  },
+  {
+    "bookid": 3,
+    "name": "The Great Gatsby",
+    "category": "Classic",
+    "author": "F. Scott Fitzgerald",
+    "image": "gatsby.jpg"
+  },
+  {
+    "bookid": 4,
+    "name": "Cooking 101: Recipes for Beginners",
+    "category": "Cooking",
+    "author": "Chef Alice",
+    "image": "cooking.jpg"
+  },
+  {
+    "bookid": 5,
+    "name": "Learning Spanish for Beginners",
+    "category": "Language",
+    "author": "Maria Garcia",
+    "image": "spanish.jpg"
+  },
+  {
+    "bookid": 6,
+    "name": "The Art of Painting",
+    "category": "Art",
+    "author": "Emily Turner",
+    "image": "painting.jpg"
+  }
+]

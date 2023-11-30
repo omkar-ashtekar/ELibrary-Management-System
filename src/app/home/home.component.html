@@ -1,0 +1,55 @@
+<!-- <h1>Home Page</h1> -->
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" [routerLink]="['/home']" routerLinkActive="active-route">E-Library</a>
+    </div>
+    <div class="btn-logout">
+      <h6>Welcome, {{ userName }}</h6>
+      <button mat-button (click)="logout()"><mat-icon>logout</mat-icon>Logout</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- <mat-toolbar>
+  <div class="navbar-nav" fxLayout="row" fxLayoutAlign="space-between center">
+    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active-route">E-Library</a>
+    <button mat-button class="btn-logout" (click)="logout()">Logout</button>
+  </div>
+</mat-toolbar> -->
+
+<!-- Creates a layout with a left-positioned sidenav and explicit content. -->
+<mat-sidenav-container >
+<mat-sidenav mode="side" opened>
+
+  <button mat-button class="menu-button" [routerLink]="['/home']" [queryParams]="{ paramFlag: '1' }" routerLinkActive="active-route">
+    <mat-icon>dashboard</mat-icon>
+    <span>Dashboard</span>
+</button>
+<button mat-button class="menu-button" [routerLink]="['/home']" [queryParams]="{ paramFlag: '2' }" routerLinkActive="active-route">
+    <mat-icon>search</mat-icon>
+    <span>Surf e-books</span>
+</button>
+<button mat-button class="menu-button" [routerLink]="['/home']" [queryParams]="{ paramFlag: '3' }" routerLinkActive="active-route">
+    <mat-icon>quiz</mat-icon>
+    <span>Take Quiz</span>
+</button>
+
+  </mat-sidenav>
+
+<mat-sidenav-content >
+  <div class="content mat-elevation-z4">
+    <div  *ngIf="paramFlag == 1">
+       <p>Dashboard coming soon</p>
+    </div>
+    <div  *ngIf="paramFlag == 2">
+      <!-- <p>searching works</p> -->
+      <app-surf></app-surf>
+    </div>
+    <div  *ngIf="paramFlag == 3">
+      <!-- <p>Quiz coming soon</p> -->
+      <app-quiz></app-quiz>
+    </div>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>

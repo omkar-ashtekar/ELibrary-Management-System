@@ -1,0 +1,81 @@
+
+* {
+    color: white;
+}
+  
+.login-lightgray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #001a33;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oval-container {
+    position: relative; /* Add this */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin-bottom: 20px;
+    background-color: white; /* Set the background color to white */
+    border-radius: 50%; /* Make it oval */
+    width: 100px; /* Adjust the width and height as needed */
+    height: 120px;
+}
+
+
+
+.form-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.form-subtitle {
+    margin: 0;
+    padding: 0;
+}
+
+.login-lightgray form {
+    text-align: center;
+    width: 400px; /* Adjust the width as desired */
+    margin: 0 auto;
+}
+
+.login-lightgray form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-lightgray form .form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-lightgray form .btn-primary {
+    background: #001a33;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 10px 20px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none;
+    width: 30%;
+    font-size: 14px;
+}

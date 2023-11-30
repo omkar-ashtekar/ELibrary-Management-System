@@ -1,0 +1,29 @@
+<div class="quiz-container">
+    <h1>Quiz Page</h1>
+  
+    <div class="book-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Quiz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <td>{{ book.title }}</td>
+            <td>
+              <button (click)="startQuiz(book)">Start Quiz</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Add the quiz section here (initially hidden) -->
+    <div class="quiz-section" *ngIf="selectedBook">
+      <h2>Quiz for {{ selectedBook.title }}</h2>
+      <!-- Display quiz questions and user interface for answering questions -->
+    </div>
+  </div>
+  
